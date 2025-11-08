@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>konversi detik ke waktu</h1>
+    masukan detik:
+    <input type="number" id="total"><br>
+    <button onclick="hitung()">total panjang titit</button>
+    <h2 id="hasil"></h2>
+    <script>
+         function hitung(){
+            let total = Number (document.getElementById("total").value || 0);
+
+            let jam = total / 3600;
+            let sisa = Math.floor(total % 3600)
+            let menit = sisa / 60 
+            let detik =Math.floor(sisa % 60)
+
+            document.getElementById("hasil").innerHTML = jam + " jam " + menit + " menit " + detik + " detik ";
+         }
+    </script>
+</body>
+</html>
