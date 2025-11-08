@@ -16,13 +16,14 @@
             let total = Number (document.getElementById("total").value || 0);
 
             let jam = total / 3600;
-            let sisa = Math.floor(total % 3600)
-            let menit = sisa / 60 
-            let detik =Math.floor(sisa % 60)
+            let sisa = Math.floor(total % 3600);
+            let menit = sisa / 60;
+            let detik =Math.floor(sisa % 60);
 
             document.getElementById("hasil").innerHTML = jam + " jam " + menit + " menit " + detik + " detik ";
          }
     </script>
 </body>
 </html>
+
 
